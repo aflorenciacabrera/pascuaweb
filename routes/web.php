@@ -12,15 +12,25 @@
 */
 
 Route::get('/', function () {
-    return view('inicio');
+    return view('bienvenido');
 });
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+//Route::get('/home', 'HomeController@index')->name('home');
 
 //Controladores de Vistas
 
-Route::get('admin/acceso','AdministradorController@acceso');
-Route::get('inicio','AdministradorController@inicio');
+
 Route::get('bienvenido','AdministradorController@bienvenido');
+Route::get('admin/acceso','AdministradorController@acceso');
+Route::get('admin/registro','AdministradorController@registro');
+
+
+Route::get('inicio','AdministradorController@inicio');
+
+
+
+Route::get("superlogout",function(){
+	Session::flush();
+});

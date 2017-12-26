@@ -14,6 +14,12 @@ class AdministradorController extends Controller
         return view('admin.acceso');
     }
 
+     public function registro()
+    {
+        
+        return view('admin.registro');
+    }
+
 
     public function inicio()
     {
