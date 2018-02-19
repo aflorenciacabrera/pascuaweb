@@ -32,4 +32,37 @@ class AdministradorController extends Controller
         
         return view('bienvenido');
     }
+
+
+    public function pedidos()
+    {
+        
+        return view('admin.pedidos');
+    }
+
+    public function productos()
+    {
+        
+        return view('admin.productos');
+    }
+
+    public function stock()
+    {
+        
+        return view('admin.stock');
+    }
+
+    public function clientes()
+    {
+        
+        return view('admin.clientes');
+    }
+
+    public function gastos()
+    {
+        
+        return view('admin.gastos');
+    }
+
+
 }

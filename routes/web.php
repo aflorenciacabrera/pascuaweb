@@ -26,6 +26,11 @@ Route::get('bienvenido','AdministradorController@bienvenido');
 Route::get('admin/acceso','AdministradorController@acceso');
 Route::get('admin/registro','AdministradorController@registro');
 
+Route::get('admin/pedidos','AdministradorController@pedidos');
+Route::get('admin/productos','AdministradorController@productos');
+Route::get('admin/stock','AdministradorController@stock');
+Route::get('admin/clientes','AdministradorController@clientes');
+Route::get('admin/gastos','AdministradorController@gastos');
 
 Route::get('inicio','AdministradorController@inicio');
 

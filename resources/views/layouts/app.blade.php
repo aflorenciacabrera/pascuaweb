@@ -38,8 +38,10 @@
     <nav class="navbar navbar-inverse">
         <div class="container">
             <div class="navbar-header">
-
-              <a  href="{{ url('bienvenido') }}" class="navbar-brand navbar-link">Pascua 2018</a>
+                <div class="col-md-4 col-sm-6 footer-navigation">
+                <h3><a href="{{ url('bienvenido') }}" >Pascuas<span>2018 </span></a></h3>
+                </div>
+                <!--  <a  href="{{ url('bienvenido') }}" class="navbar-brand navbar-link">Pascuas 2018</a>-->
 
                 <button data-toggle="collapse" data-target="#navcol-1" class="navbar-toggle collapsed">
                   <span class="sr-only">Toggle navigation</span>
@@ -103,16 +105,16 @@
         <footer>
         <div class="row">
             <div class="col-md-4 col-sm-6 footer-navigation">
-                <h3><a href="#">Company<span>logo </span></a></h3>
+                <h3><a href="#">Pascuas<span>2018 </span></a></h3>
                 <p class="links"><a href="#">Home</a><strong> · </strong><a href="#">Blog</a><strong> · </strong><a href="#">Pricing</a><strong> · </strong><a href="#">About</a><strong> · </strong><a href="#">Faq</a><strong> · </strong><a href="#">Contact</a></p>
-                <p class="company-name">Company Name © 2015 </p>
+                <p class="company-name">Florencia Cabrera © 2018 </p>
             </div>
             <div class="col-md-4 col-sm-6 footer-contacts">
                 <div><span class="fa fa-map-marker footer-contacts-icon"> </span>
-                    <p><span class="new-line-span">21 Revolution Street</span> Paris, France</p>
+                    <p><span class="new-line-span">Dirección</span> Corrientes, Argentina</p>
                 </div>
                 <div><i class="fa fa-phone footer-contacts-icon"></i>
-                    <p class="footer-center-info email text-left"> +1 555 123456</p>
+                    <p class="footer-center-info email text-left"> 379-4669983</p>
                 </div>
                 <div><i class="fa fa-envelope footer-contacts-icon"></i>
                     <p> <a href="#" target="_blank">support@company.com</a></p>
