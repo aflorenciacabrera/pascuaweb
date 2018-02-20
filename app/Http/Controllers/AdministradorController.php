@@ -34,24 +34,27 @@ class AdministradorController extends Controller
     }
 
 //*********PEDIDOS***************
-    public function pedidos()
+    public function pedido()
     {
         
-        return view('admin.pedidos');
+        return view('admin.pedido');
     }
 
 //*********PRODUCTOS***************
-    public function productos()
+    public function producto()
     {
-        $productos = productos::orderBy('id');//->take(10)->get();
-        return view('productos',array('productos'=>$productos));
        
-        return view('admin.productos.productos');
+        return view('admin.producto.producto');
     }
-    public function nuevoProductos()
+    public function nuevoProducto()
     {
         
-        return view('admin.productos.nuevoProductos');
+        return view('admin.producto.nuevoProducto');
+    }
+    public function editarProducto()
+    {
+        
+        return view('admin.producto.editarProducto');
     }
     
 //*********STOCK***************
@@ -62,17 +65,37 @@ class AdministradorController extends Controller
     }
 
 //*********CLIENTES***************
-    public function clientes()
+    public function cliente()
     {
         
-        return view('admin.clientes');
+        return view('admin.cliente.cliente');
+    }
+    public function nuevoCliente()
+    {
+        
+        return view('admin.cliente.nuevoCliente');
+    }
+    public function editarCliente()
+    {
+        
+        return view('admin.cliente.editarCliente');
     }
 
 //*********GASTOS***************
-    public function gastos()
+    public function gasto()
     {
         
-        return view('admin.gastos');
+        return view('admin.gasto.gasto');
+    }
+    public function nuevoGasto()
+    {
+        
+        return view('admin.gasto.nuevoGasto');
+    }
+    public function editarGasto()
+    {
+        
+        return view('admin.gasto.editarGasto');
     }
 
 

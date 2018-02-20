@@ -29,19 +29,22 @@ Route::get('admin/acceso','AdministradorController@acceso');
 Route::get('admin/registro','AdministradorController@registro');
 
 //*********PEDIDOS***************
-Route::get('admin/pedidos','AdministradorController@pedidos');
+Route::get('admin/pedido','AdministradorController@pedido');
 //*********PRODUCTOS***************
-Route::get('admin/productos/productos','AdministradorController@productos');
-Route::get('admin/productos/nuevoProductos','AdministradorController@nuevoProductos');
-Route::post('admin/productos/productos', 'ProductoController@crear');
+Route::get('admin/producto/producto','AdministradorController@producto');
+Route::get('admin/producto/nuevoProducto','AdministradorController@nuevoProducto');
+Route::get('admin/producto/editarProducto','AdministradorController@editarProducto');
+
 //*********STOCK***************
 Route::get('admin/stock','AdministradorController@stock');
 //*********CLIENTES***************
-Route::get('admin/clientes','AdministradorController@clientes');
+Route::get('admin/cliente/cliente','AdministradorController@cliente');
+Route::get('admin/cliente/nuevoCliente','AdministradorController@nuevoCliente');
+Route::get('admin/cliente/editarCliente','AdministradorController@editarCliente');
 //*********GASTOS***************
-Route::get('admin/gastos','AdministradorController@gastos');
-
-
+Route::get('admin/gasto/gasto','AdministradorController@gasto');
+Route::get('admin/gasto/nuevoGasto','AdministradorController@nuevoGasto');
+Route::get('admin/gasto/editarGasto','AdministradorController@editarGasto');
 
 
 Route::get("superlogout",function(){

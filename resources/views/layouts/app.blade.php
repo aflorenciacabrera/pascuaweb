@@ -80,10 +80,30 @@
 
                                 <ul  class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
                                     <li role="presentation">
-                                          <a href="{{ url('admin/productos/productos') }}">
-                                          Productos
+                                          <a href="{{ url('admin/producto/producto') }}">
+                                          - Productos
                                         </a>
-                                      </li>
+                                    </li>
+                                    <li role="presentation">
+                                          <a href="{{ url('admin/cliente/cliente') }}">
+                                          - Clientes
+                                        </a>
+                                    </li>
+                                    <li role="presentation">
+                                          <a href="{{ url('admin/cliente/producto') }}">
+                                          - Stock
+                                        </a>
+                                    </li>
+                                     <li role="presentation">
+                                          <a href="{{ url('admin/cliente/producto') }}">
+                                          - Pedidos   
+                                        </a>
+                                    </li>
+                                    <li role="presentation">
+                                          <a href="{{ url('admin/cliente/producto') }}">
+                                          - Gastos   
+                                        </a>
+                                    </li>
                                     <li class="divider"></li>
                                     <li  class="dropdown-submenu">
 
