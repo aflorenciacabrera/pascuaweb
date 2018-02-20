@@ -6,8 +6,8 @@ use Illuminate\Http\Request;
 
 class AdministradorController extends Controller
 {
-    //
 
+//*********ACCESOS Y REGISTRO***************
     public function acceso()
     {
         
@@ -20,7 +20,7 @@ class AdministradorController extends Controller
         return view('admin.registro');
     }
 
-
+//*********INICIO Y BIENVENIDA***************
     public function inicio()
     {
         
@@ -33,31 +33,42 @@ class AdministradorController extends Controller
         return view('bienvenido');
     }
 
-
+//*********PEDIDOS***************
     public function pedidos()
     {
         
         return view('admin.pedidos');
     }
 
+//*********PRODUCTOS***************
     public function productos()
     {
-        
-        return view('admin.productos');
+        $productos = productos::orderBy('id');//->take(10)->get();
+        return view('productos',array('productos'=>$productos));
+       
+        return view('admin.productos.productos');
     }
-
+    public function nuevoProductos()
+    {
+        
+        return view('admin.productos.nuevoProductos');
+    }
+    
+//*********STOCK***************
     public function stock()
     {
         
         return view('admin.stock');
     }
 
+//*********CLIENTES***************
     public function clientes()
     {
         
         return view('admin.clientes');
     }
 
+//*********GASTOS***************
     public function gastos()
     {
         

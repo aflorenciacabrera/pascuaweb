@@ -17,32 +17,62 @@
         <br/>
 
 
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
+            <div class="gallery_product col-lg-2 col-md-4 col-sm-4 col-xs-4 filter hdpe">
                 <img src="{{asset('img/Ardilla M.jpg')}}" class="img-responsive" width="200" > 
                 <label>descrip</label>
             </div>
 
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter sprinkle">
+            <div class="gallery_product col-lg-2 col-md-4 col-sm-4 col-xs-4 filter hdpe">
                 <img src="{{asset('img/Ardilla M.jpg')}}" class="img-responsive" width="200" > 
                 <label>descrip</label>
             </div>
 
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
+            <div class="gallery_product col-lg-2 col-md-4 col-sm-4 col-xs-4 filter hdpe">
                 <img src="{{asset('img/Ardilla M.jpg')}}" class="img-responsive" width="200" > 
                 <label>descrip</label>
             </div>
 
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
+             <div class="gallery_product col-lg-2 col-md-4 col-sm-4 col-xs-4 filter hdpe">
                 <img src="{{asset('img/Ardilla M.jpg')}}" class="img-responsive" width="200" > 
                 <label>descrip</label>
             </div>
 
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
+            <div class="gallery_product col-lg-2 col-md-4 col-sm-4 col-xs-4 filter hdpe">
+                <img src="{{asset('img/Ardilla M.jpg')}}" class="img-responsive" width="200" > 
+                <label>descrip</label>
+            </div>
+ 
+            <div class="gallery_product col-lg-2 col-md-4 col-sm-4 col-xs-4 filter hdpe">
                 <img src="{{asset('img/Ardilla M.jpg')}}" class="img-responsive" width="200" > 
                 <label>descrip</label>
             </div>
 
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
+             <div class="gallery_product col-lg-2 col-md-4 col-sm-4 col-xs-4 filter hdpe">
+                <img src="{{asset('img/Ardilla M.jpg')}}" class="img-responsive" width="200" > 
+                <label>descrip</label>
+            </div>
+
+             <div class="gallery_product col-lg-2 col-md-4 col-sm-4 col-xs-4 filter hdpe">
+                <img src="{{asset('img/Ardilla M.jpg')}}" class="img-responsive" width="200" > 
+                <label>descrip</label>
+            </div>
+
+             <div class="gallery_product col-lg-2 col-md-4 col-sm-4 col-xs-4 filter hdpe">
+                <img src="{{asset('img/Ardilla M.jpg')}}" class="img-responsive" width="200" > 
+                <label>descrip</label>
+            </div>
+
+             <div class="gallery_product col-lg-2 col-md-4 col-sm-4 col-xs-4 filter hdpe">
+                <img src="{{asset('img/Ardilla M.jpg')}}" class="img-responsive" width="200" > 
+                <label>descrip</label>
+            </div>
+
+             <div class="gallery_product col-lg-2 col-md-4 col-sm-4 col-xs-4 filter hdpe">
+                <img src="{{asset('img/Ardilla M.jpg')}}" class="img-responsive" width="200" > 
+                <label>descrip</label>
+            </div>
+
+             <div class="gallery_product col-lg-2 col-md-4 col-sm-4 col-xs-4 filter hdpe">
                 <img src="{{asset('img/Ardilla M.jpg')}}" class="img-responsive" width="200" > 
                 <label>descrip</label>
             </div>

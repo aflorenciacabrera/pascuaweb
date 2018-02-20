@@ -21,18 +21,26 @@ Auth::routes();
 
 //Controladores de Vistas
 
-
+//*********INICIO Y BIENVENIDA***************
 Route::get('bienvenido','AdministradorController@bienvenido');
+Route::get('inicio','AdministradorController@inicio');
+//*********ACCESOS Y REGISTRO***************
 Route::get('admin/acceso','AdministradorController@acceso');
 Route::get('admin/registro','AdministradorController@registro');
 
+//*********PEDIDOS***************
 Route::get('admin/pedidos','AdministradorController@pedidos');
-Route::get('admin/productos','AdministradorController@productos');
+//*********PRODUCTOS***************
+Route::get('admin/productos/productos','AdministradorController@productos');
+Route::get('admin/productos/nuevoProductos','AdministradorController@nuevoProductos');
+Route::post('admin/productos/productos', 'ProductoController@crear');
+//*********STOCK***************
 Route::get('admin/stock','AdministradorController@stock');
+//*********CLIENTES***************
 Route::get('admin/clientes','AdministradorController@clientes');
+//*********GASTOS***************
 Route::get('admin/gastos','AdministradorController@gastos');
 
-Route::get('inicio','AdministradorController@inicio');
 
 
 

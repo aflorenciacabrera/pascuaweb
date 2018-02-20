@@ -18,7 +18,7 @@
      <link rel="stylesheet" href="{{asset('assets/bootstrap/css/bootstrap.min.css')}}">
     <link rel="stylesheet" href="{{asset('https://fonts.googleapis.com/css?family=Cookie')}}">
     <link rel="stylesheet" href="{{asset('/assets/fonts/font-awesome.min.css')}}">
-    <link rel="stylesheet" href="{{asset('/bootstrap/css/Pretty-Footer.css')}}">
+   
     <link rel="stylesheet" href="{{asset('/bootstrap/css/Hero-Technology.css')}}">
     <link rel="stylesheet" href="{{asset('/bootstrap/css/styles.css')}}">
 
@@ -36,7 +36,7 @@
 <body>
  <div id="app">
     <nav class="navbar navbar-inverse">
-        <div class="container">
+        <div class="container-fluid">
             <div class="navbar-header">
                 <div class="col-md-4 col-sm-6 footer-navigation">
                 <h3><a href="{{ url('bienvenido') }}" >Pascuas<span>2018 </span></a></h3>
@@ -62,20 +62,26 @@
                   @guest
                     <li role="presentation" class="active"><a href="{{ url('bienvenido') }}"><i class="glyphicon glyphicon-home"></i></a></li>
                     
-                    <li role="presentation"><a href="{{ url('/admin/acceso') }}">Acceder </a></li>
+                    <li role="presentation"><a href="{{ url('/admin/acceso') }}"> <i class="glyphicon glyphicon-user"></i> Acceder </a></li>
                     <!--<li role="presentation"><a href="{{ url('/admin/registro') }}">Registrar </a></li>-->
                     @else
+                    
                     <li role="presentation " class="active"><a href="{{ url('bienvenido') }}"><i class="glyphicon glyphicon-home"></i></a></li>
-                    <li role="presentation" ><a href="{{ url('inicio') }}">Inicio </a></li>
+
+                   
+
                      <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true">
+                         <li role="presentation" ><a href="{{ url('inicio') }}">Inicio </a></li>
+                         
+                                <a href="#" class="dropdown-toggle btn btn-default navbar-btn" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true">
                                     {{ Auth::user()->name }} <span class="caret"></span>
                                 </a>
+                                 
 
                                 <ul  class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
                                     <li role="presentation">
-                                          <a href="{{ url('/productor/perfil') }}">
-                                          Perfil
+                                          <a href="{{ url('admin/productos/productos') }}">
+                                          Productos
                                         </a>
                                       </li>
                                     <li class="divider"></li>
@@ -93,6 +99,7 @@
                                     </li>
                                 </ul>
                             </li>
+
                             @endguest
                 </ul>
             </div>
