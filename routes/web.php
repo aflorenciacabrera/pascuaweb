@@ -33,6 +33,7 @@ Route::get('admin/pedido','AdministradorController@pedido');
 //*********PRODUCTOS***************
 Route::get('admin/producto/producto','AdministradorController@producto');
 Route::get('admin/producto/nuevoProducto','AdministradorController@nuevoProducto');
+Route::post('admin/producto/nuevoProducto', 'ProductoController@crear');
 Route::get('admin/producto/editarProducto','AdministradorController@editarProducto');
 
 //*********STOCK***************

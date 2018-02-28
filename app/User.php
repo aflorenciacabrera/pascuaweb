@@ -4,6 +4,9 @@ namespace pascuaweb;
 
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Database\Eloquent\SoftDeletes;
+use Illuminate\Database\Eloquent\Model;
+use pascuaweb\producto;
 
 class User extends Authenticatable
 {
@@ -26,4 +29,9 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+public function productos()
+    {
+        return $this->hasMany('pascuaweb\producto');
+    }
+     
 }

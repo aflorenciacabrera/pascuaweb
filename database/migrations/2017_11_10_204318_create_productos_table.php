@@ -18,10 +18,13 @@ class CreateProductosTable extends Migration
             $table->string('nombre');  
             $table->string('tipo'); 
             $table->string('tamano');  
-            $table->string('sabor');
-            $table->string('avatar')->default('default.jpg');  
+            $table->string('medida'); 
+            $table->string('peso'); 
+            $table->string('sabor');         
             $table->string('precio');  
-             
+            $table->string('avatar')->default('default.jpg');  
+             $table->integer('User_id')->unsigned();
+             $table->foreign('User_id')->references('id')->on('users')->onDelete('cascade');
             $table->timestamps();
         });
     }

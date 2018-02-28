@@ -41,6 +41,8 @@ class AdministradorController extends Controller
     }
 
 //*********PRODUCTOS***************
+   
+
     public function producto()
     {
        

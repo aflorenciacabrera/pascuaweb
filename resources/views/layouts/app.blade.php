@@ -60,7 +60,7 @@
 
                 <ul class="nav navbar-nav navbar-right">
                   @guest
-                    <li role="presentation" class="active"><a href="{{ url('bienvenido') }}"><i class="glyphicon glyphicon-home"></i></a></li>
+                    
                     
                     <li role="presentation"><a href="{{ url('/admin/acceso') }}"> <i class="glyphicon glyphicon-user"></i> Acceder </a></li>
                     <!--<li role="presentation"><a href="{{ url('/admin/registro') }}">Registrar </a></li>-->
