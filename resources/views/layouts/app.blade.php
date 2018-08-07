@@ -129,7 +129,7 @@
    </div>
 
 
-        <footer>
+        {{-- <footer>
         <div class="row">
             <div class="col-md-4 col-sm-6 footer-navigation">
                 <h3><a href="#">Pascuas<span>2018 </span></a></h3>
@@ -156,7 +156,7 @@
             </div>
         </div>
     </footer>
-
+ --}}
 
 
     <script src="{{ asset('js/app.js') }}"></script>
