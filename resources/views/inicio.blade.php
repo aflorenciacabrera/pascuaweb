@@ -2,12 +2,12 @@
 @section('content')
 
 
-
-<br>
-<p></p>
+<div class="container">
+    <div class="row">
+        <
    {{-- Panel de botones --}}
     <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-12 col-md-offset-2">
             <div class="container-fluid">
                 <div class="col-md-11 col-md-offset-3">
                     {{-- Pedidos --}}
