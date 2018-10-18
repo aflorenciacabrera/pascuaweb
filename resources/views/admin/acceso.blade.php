@@ -3,9 +3,9 @@
 @section('content')
 <div class="container">
     <div class="row">
-        <div class="col-md-8 col-md-offset-2">
+        <div class="col-md-6 col-md-offset-3">
             <div class="panel panel-default">
-                <div class="panel-heading">Iniciar sesión</div>
+                <div class="panel-heading text-center">Iniciar sesión</div>
 
                 <div class="panel-body">
                     <form class="form-horizontal" method="POST" action="{{ route('login') }}">
@@ -39,7 +39,7 @@
                             </div>
                         </div>
 
-                        <div class="form-group">
+                        {{-- <div class="form-group">
                             <div class="col-md-6 col-md-offset-4">
                                 <div class="checkbox">
                                     <label>
@@ -47,7 +47,7 @@
                                     </label>
                                 </div>
                             </div>
-                        </div>
+                        </div> --}}
 
                         <div class="form-group">
                             <div class="col-md-8 col-md-offset-4">
@@ -55,13 +55,13 @@
                                     Acceder
                                 </button>
 
-                                <a class="btn btn-link" href="{{ route('password.request') }}">
+                                {{-- <a class="btn btn-link" href="{{ route('password.request') }}">
                                   Olvide mi Contraseña?
-                                </a>
+                                </a> --}}
                             </div>
                         </div>
 
-                          <div class="form-group">
+                          {{-- <div class="form-group">
                             <div class="col-md-8 col-md-offset-3">
         
                                 
@@ -69,7 +69,7 @@
                                        Crear un Nuevo Usuario.
                                     </a>
                             </div>
-                        </div>
+                        </div> --}}
                     </form>
                 </div>
             </div>

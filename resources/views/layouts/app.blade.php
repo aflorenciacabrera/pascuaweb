@@ -39,7 +39,7 @@
         <div class="container-fluid">
             <div class="navbar-header">
                 <div class="col-md-4 col-sm-6 footer-navigation">
-                <h3><a href="{{ url('bienvenido') }}" >Pascuas<span>2018 </span></a></h3>
+                <h3><a href="{{ url('bienvenido') }}" >Pascuas<span>Web </span></a></h3>
                 </div>
                 <!--  <a  href="{{ url('bienvenido') }}" class="navbar-brand navbar-link">Pascuas 2018</a>-->
 
@@ -62,7 +62,7 @@
                   @guest
                     
                     
-                    <li role="presentation"><a href="{{ url('/admin/acceso') }}"> <i class="glyphicon glyphicon-user"></i> Acceder </a></li>
+                    <li role="presentation"><a href="{{ url('acceso') }}"> <i class="glyphicon glyphicon-user"></i> Acceder </a></li>
                     <!--<li role="presentation"><a href="{{ url('/admin/registro') }}">Registrar </a></li>-->
                     @else
                     
@@ -129,9 +129,11 @@
    </div>
 
 
-        {{-- <footer>
-        <div class="row">
-            <div class="col-md-4 col-sm-6 footer-navigation">
+        <footer>
+            <h4 class="  company-name  text-center">Florencia Cabrera © 2018</h4>
+         
+        {{-- <div class="row">
+            <div class="col-md- col-sm- footer-navigation">
                 <h3><a href="#">Pascuas<span>2018 </span></a></h3>
                 <p class="links"><a href="#">Home</a><strong> · </strong><a href="#">Blog</a><strong> · </strong><a href="#">Pricing</a><strong> · </strong><a href="#">About</a><strong> · </strong><a href="#">Faq</a><strong> · </strong><a href="#">Contact</a></p>
                 <p class="company-name">Florencia Cabrera © 2018 </p>
@@ -154,9 +156,9 @@
                 </p>
                 <div class="social-links social-icons"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-linkedin"></i></a><a href="#"><i class="fa fa-github"></i></a></div>
             </div>
-        </div>
+        </div> --}}
     </footer>
- --}}
+
 
 
     <script src="{{ asset('js/app.js') }}"></script>

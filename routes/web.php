@@ -25,8 +25,8 @@ Auth::routes();
 Route::get('bienvenido','AdministradorController@bienvenido');
 Route::get('inicio','AdministradorController@inicio');
 //*********ACCESOS Y REGISTRO***************
-Route::get('admin/acceso','AdministradorController@acceso');
-Route::get('admin/registro','AdministradorController@registro');
+Route::get('acceso','AdministradorController@acceso');
+//Route::get('admin/registro','AdministradorController@registro');
 
 //*********PEDIDOS***************
 Route::get('admin/pedido','AdministradorController@pedido');
